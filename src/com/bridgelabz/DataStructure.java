@@ -9,6 +9,8 @@ public class DataStructure {
         LinkedList.pop();
         LinkedList.print();
 
+        LinkedList.Search(30);
+
 
     }
 }
