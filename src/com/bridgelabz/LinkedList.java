@@ -15,20 +15,22 @@ public class LinkedList<T> {
             head = obj1;
         }
     }
+
     public void add(T data) {
-        Node<T> obj2= new Node<>(data);
+        Node<T> obj2 = new Node<>(data);
         if (head == null) {
             head = obj2;
             tail = obj2;
         } else {
-            tail.next=obj2;
+            tail.next = obj2;
             tail = obj2;
         }
     }
+
     public void insertBetween(T insertData) {
-        Node<T> obj2= new Node<>(insertData);
-       head.next=obj2;
-       obj2.next=tail;
+        Node<T> obj2 = new Node<>(insertData);
+        head.next = obj2;
+        obj2.next = tail;
     }
 
     public void print() {
@@ -39,5 +41,15 @@ public class LinkedList<T> {
 
 
         }
+    }
+    public T pop() {
+        Node<T> popelement = head;
+        T element=popelement.data;
+        Node<T> nextelem=popelement.next;
+        popelement.data=null;
+        popelement.next=null;
+        head=nextelem;
+        return element;
+
     }
 }
