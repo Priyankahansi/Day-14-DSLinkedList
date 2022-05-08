@@ -13,7 +13,6 @@ public class LinkedList<T> {
             head = newnode;
         }
     }
-
     public void print() {
         Node<T> temp = head;
         while (temp != null) {

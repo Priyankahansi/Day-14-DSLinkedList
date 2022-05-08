@@ -8,6 +8,8 @@ public class DataStructure {
         LinkedList.push(56);
 
         LinkedList.print();
+
+
     }
 }
 
